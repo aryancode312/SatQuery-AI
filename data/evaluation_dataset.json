@@ -1,0 +1,509 @@
+{
+  "dataset_name": "SatQuery AI Human-Reviewed Evaluation Set",
+  "dataset_version": "1.1",
+  "purpose": "Evaluate image-grounded visual question answering using human-reviewed reference answers.",
+  "scoring_scale": {
+    "1": "Poor: mostly incorrect, unsupported, or missing.",
+    "2": "Limited: some correct content, but major errors or omissions.",
+    "3": "Adequate: generally useful, with noticeable errors or unsupported claims.",
+    "4": "Good: mostly accurate and grounded, with minor issues.",
+    "5": "Excellent: accurate, relevant, complete, and appropriately cautious."
+  },
+  "images": [
+    {
+      "image_id": "urban_01",
+      "category": "urban",
+      "image_path": "data/images/URBAN.png",
+      "image_source": "User-provided image",
+      "notes": "Reference answers drafted from the supplied image; verify against the original full-resolution file before treating as final.",
+      "questions": [
+        {
+          "question_id": "urban_01_q1",
+          "question_type": "feature_identification",
+          "question": "What visible features can be identified in this image?",
+          "reference_answer": "The image shows a dense built-up area with many closely spaced buildings, a network of roads, and several larger building complexes. Small green spaces and numerous bright-blue features are visible within some blocks. A large complex with a curved or circular layout is prominent in the upper-central area, and a blue rectangular sports-court-like surface appears right of center.",
+          "reference_notes": "Image-grounded visual reference; avoid inferring location, sensor, date, exact measurements, or causes not visible in the image.",
+          "status": "draft_reference_review"
+        },
+        {
+          "question_id": "urban_01_q2",
+          "question_type": "spatial_reasoning",
+          "question": "Describe the spatial arrangement and relationships between visible features.",
+          "reference_answer": "Roads divide the built-up area into blocks and connect the dense building clusters. A large curved-layout complex occupies the upper-central portion, while smaller blocks of buildings extend across the left and lower portions. Open landscaped spaces and blue pool-like features occur within several compounds. The blue rectangular court-like feature is located to the right of the central road corridor.",
+          "reference_notes": "Image-grounded visual reference; avoid inferring location, sensor, date, exact measurements, or causes not visible in the image.",
+          "status": "draft_reference_review"
+        },
+        {
+          "question_id": "urban_01_q3",
+          "question_type": "uncertainty",
+          "question": "What can and cannot be reliably concluded from this image alone?",
+          "reference_answer": "The image supports identifying dense buildings, roads, larger compounds, landscaped spaces, and several blue pool-like or court-like features. The precise function of the buildings, whether every blue feature is a swimming pool, the names of roads, population, building height, and geographic location cannot be determined from this image alone.",
+          "reference_notes": "Image-grounded visual reference; avoid inferring location, sensor, date, exact measurements, or causes not visible in the image.",
+          "status": "draft_reference_review"
+        }
+      ]
+    },
+    {
+      "image_id": "urban_02",
+      "category": "urban",
+      "image_path": "",
+      "image_source": "",
+      "notes": "Placeholder for a future distinct image; do not reuse the first image if reporting 15 unique images.",
+      "questions": [
+        {
+          "question_id": "urban_02_q1",
+          "question_type": "feature_identification",
+          "question": "What visible features can be identified in this image?",
+          "reference_answer": "",
+          "reference_notes": "",
+          "status": "awaiting_distinct_image"
+        },
+        {
+          "question_id": "urban_02_q2",
+          "question_type": "spatial_reasoning",
+          "question": "Describe the spatial arrangement and relationships between visible features.",
+          "reference_answer": "",
+          "reference_notes": "",
+          "status": "awaiting_distinct_image"
+        },
+        {
+          "question_id": "urban_02_q3",
+          "question_type": "uncertainty",
+          "question": "What can and cannot be reliably concluded from this image alone?",
+          "reference_answer": "",
+          "reference_notes": "",
+          "status": "awaiting_distinct_image"
+        }
+      ]
+    },
+    {
+      "image_id": "urban_03",
+      "category": "urban",
+      "image_path": "",
+      "image_source": "",
+      "notes": "Placeholder for a future distinct image; do not reuse the first image if reporting 15 unique images.",
+      "questions": [
+        {
+          "question_id": "urban_03_q1",
+          "question_type": "feature_identification",
+          "question": "What visible features can be identified in this image?",
+          "reference_answer": "",
+          "reference_notes": "",
+          "status": "awaiting_distinct_image"
+        },
+        {
+          "question_id": "urban_03_q2",
+          "question_type": "spatial_reasoning",
+          "question": "Describe the spatial arrangement and relationships between visible features.",
+          "reference_answer": "",
+          "reference_notes": "",
+          "status": "awaiting_distinct_image"
+        },
+        {
+          "question_id": "urban_03_q3",
+          "question_type": "uncertainty",
+          "question": "What can and cannot be reliably concluded from this image alone?",
+          "reference_answer": "",
+          "reference_notes": "",
+          "status": "awaiting_distinct_image"
+        }
+      ]
+    },
+    {
+      "image_id": "agriculture_01",
+      "category": "agriculture",
+      "image_path": "data/images/AGRICULTURE.png",
+      "image_source": "User-provided image",
+      "notes": "Reference answers drafted from the supplied image; verify against the original full-resolution file before treating as final.",
+      "questions": [
+        {
+          "question_id": "agriculture_01_q1",
+          "question_type": "feature_identification",
+          "question": "What visible features can be identified in this image?",
+          "reference_answer": "The image shows a large patchwork of rectangular and square agricultural-looking plots. The plots have varied green, brown, tan, and muted colors, with visible differences in surface texture and tone. Narrow linear boundaries and tracks divide many plots. A dark, irregular winding linear feature runs through the left portion, and a compact cluster of closely spaced structures is visible toward the lower-right area.",
+          "reference_notes": "Image-grounded visual reference; avoid inferring location, sensor, date, exact measurements, or causes not visible in the image.",
+          "status": "draft_reference_review"
+        },
+        {
+          "question_id": "agriculture_01_q2",
+          "question_type": "spatial_reasoning",
+          "question": "Describe the spatial arrangement and relationships between visible features.",
+          "reference_answer": "The fields form a mostly regular grid, although plot sizes and orientations vary. Narrow boundaries or tracks separate adjacent plots. The winding dark feature cuts across the grid on the left, while the denser built-up-looking cluster lies near the lower-right edge. The image does not establish whether the winding feature is a canal, stream, or road.",
+          "reference_notes": "Image-grounded visual reference; avoid inferring location, sensor, date, exact measurements, or causes not visible in the image.",
+          "status": "draft_reference_review"
+        },
+        {
+          "question_id": "agriculture_01_q3",
+          "question_type": "uncertainty",
+          "question": "What can and cannot be reliably concluded from this image alone?",
+          "reference_answer": "The image supports identifying a patchwork of cultivated-looking plots, linear field boundaries, a winding dark feature, and a small cluster of structures. The different field colors may reflect differences in crop cover, soil exposure, or image conditions, but the crop types, planting dates, irrigation status, exact land ownership, and geographic location cannot be determined from this image alone.",
+          "reference_notes": "Image-grounded visual reference; avoid inferring location, sensor, date, exact measurements, or causes not visible in the image.",
+          "status": "draft_reference_review"
+        }
+      ]
+    },
+    {
+      "image_id": "agriculture_02",
+      "category": "agriculture",
+      "image_path": "",
+      "image_source": "",
+      "notes": "Placeholder for a future distinct image; do not reuse the first image if reporting 15 unique images.",
+      "questions": [
+        {
+          "question_id": "agriculture_02_q1",
+          "question_type": "feature_identification",
+          "question": "What visible features can be identified in this image?",
+          "reference_answer": "",
+          "reference_notes": "",
+          "status": "awaiting_distinct_image"
+        },
+        {
+          "question_id": "agriculture_02_q2",
+          "question_type": "spatial_reasoning",
+          "question": "Describe the spatial arrangement and relationships between visible features.",
+          "reference_answer": "",
+          "reference_notes": "",
+          "status": "awaiting_distinct_image"
+        },
+        {
+          "question_id": "agriculture_02_q3",
+          "question_type": "uncertainty",
+          "question": "What can and cannot be reliably concluded from this image alone?",
+          "reference_answer": "",
+          "reference_notes": "",
+          "status": "awaiting_distinct_image"
+        }
+      ]
+    },
+    {
+      "image_id": "agriculture_03",
+      "category": "agriculture",
+      "image_path": "",
+      "image_source": "",
+      "notes": "Placeholder for a future distinct image; do not reuse the first image if reporting 15 unique images.",
+      "questions": [
+        {
+          "question_id": "agriculture_03_q1",
+          "question_type": "feature_identification",
+          "question": "What visible features can be identified in this image?",
+          "reference_answer": "",
+          "reference_notes": "",
+          "status": "awaiting_distinct_image"
+        },
+        {
+          "question_id": "agriculture_03_q2",
+          "question_type": "spatial_reasoning",
+          "question": "Describe the spatial arrangement and relationships between visible features.",
+          "reference_answer": "",
+          "reference_notes": "",
+          "status": "awaiting_distinct_image"
+        },
+        {
+          "question_id": "agriculture_03_q3",
+          "question_type": "uncertainty",
+          "question": "What can and cannot be reliably concluded from this image alone?",
+          "reference_answer": "",
+          "reference_notes": "",
+          "status": "awaiting_distinct_image"
+        }
+      ]
+    },
+    {
+      "image_id": "forest_01",
+      "category": "forest",
+      "image_path": "data/images/FOREST.png",
+      "image_source": "User-provided image",
+      "notes": "Reference answers drafted from the supplied image; verify against the original full-resolution file before treating as final.",
+      "questions": [
+        {
+          "question_id": "forest_01_q1",
+          "question_type": "feature_identification",
+          "question": "What visible features can be identified in this image?",
+          "reference_answer": "The image contains extensive dark-green vegetation cover. A broad, light tan river-like feature with many bends and loops crosses the scene. Smaller winding channels are also visible, along with a few lighter patches that appear to be clearings or developed areas. A more regular rectangular pattern is visible near the lower-central part of the image.",
+          "reference_notes": "Image-grounded visual reference; avoid inferring location, sensor, date, exact measurements, or causes not visible in the image.",
+          "status": "draft_reference_review"
+        },
+        {
+          "question_id": "forest_01_q2",
+          "question_type": "spatial_reasoning",
+          "question": "Describe the spatial arrangement and relationships between visible features.",
+          "reference_answer": "The broad winding river-like feature forms a prominent corridor through the vegetated landscape, with repeated bends and loops. Dense green cover occupies much of the area on both sides. Smaller channels and lighter patches are scattered through the vegetation. The rectangular patterned area lies near the lower-central portion and contrasts with the surrounding irregular vegetation texture.",
+          "reference_notes": "Image-grounded visual reference; avoid inferring location, sensor, date, exact measurements, or causes not visible in the image.",
+          "status": "draft_reference_review"
+        },
+        {
+          "question_id": "forest_01_q3",
+          "question_type": "uncertainty",
+          "question": "What can and cannot be reliably concluded from this image alone?",
+          "reference_answer": "The image supports identifying extensive vegetation, a prominent winding river-like feature, smaller channels, and some lighter or more regular patches. The exact tree species, forest type, biodiversity, water quality, seasonal conditions, cause of the clearings, and whether the rectangular area is a plantation or another land use cannot be confirmed from this image alone.",
+          "reference_notes": "Image-grounded visual reference; avoid inferring location, sensor, date, exact measurements, or causes not visible in the image.",
+          "status": "draft_reference_review"
+        }
+      ]
+    },
+    {
+      "image_id": "forest_02",
+      "category": "forest",
+      "image_path": "",
+      "image_source": "",
+      "notes": "Placeholder for a future distinct image; do not reuse the first image if reporting 15 unique images.",
+      "questions": [
+        {
+          "question_id": "forest_02_q1",
+          "question_type": "feature_identification",
+          "question": "What visible features can be identified in this image?",
+          "reference_answer": "",
+          "reference_notes": "",
+          "status": "awaiting_distinct_image"
+        },
+        {
+          "question_id": "forest_02_q2",
+          "question_type": "spatial_reasoning",
+          "question": "Describe the spatial arrangement and relationships between visible features.",
+          "reference_answer": "",
+          "reference_notes": "",
+          "status": "awaiting_distinct_image"
+        },
+        {
+          "question_id": "forest_02_q3",
+          "question_type": "uncertainty",
+          "question": "What can and cannot be reliably concluded from this image alone?",
+          "reference_answer": "",
+          "reference_notes": "",
+          "status": "awaiting_distinct_image"
+        }
+      ]
+    },
+    {
+      "image_id": "forest_03",
+      "category": "forest",
+      "image_path": "",
+      "image_source": "",
+      "notes": "Placeholder for a future distinct image; do not reuse the first image if reporting 15 unique images.",
+      "questions": [
+        {
+          "question_id": "forest_03_q1",
+          "question_type": "feature_identification",
+          "question": "What visible features can be identified in this image?",
+          "reference_answer": "",
+          "reference_notes": "",
+          "status": "awaiting_distinct_image"
+        },
+        {
+          "question_id": "forest_03_q2",
+          "question_type": "spatial_reasoning",
+          "question": "Describe the spatial arrangement and relationships between visible features.",
+          "reference_answer": "",
+          "reference_notes": "",
+          "status": "awaiting_distinct_image"
+        },
+        {
+          "question_id": "forest_03_q3",
+          "question_type": "uncertainty",
+          "question": "What can and cannot be reliably concluded from this image alone?",
+          "reference_answer": "",
+          "reference_notes": "",
+          "status": "awaiting_distinct_image"
+        }
+      ]
+    },
+    {
+      "image_id": "water_coastal_01",
+      "category": "water_coastal",
+      "image_path": "data/images/WATER AND COASTAL.png",
+      "image_source": "User-provided image",
+      "notes": "Reference answers drafted from the supplied image; verify against the original full-resolution file before treating as final.",
+      "questions": [
+        {
+          "question_id": "water_coastal_01_q1",
+          "question_type": "feature_identification",
+          "question": "What visible features can be identified in this image?",
+          "reference_answer": "The image shows a coastline or coastal-water interface with a large body of blue water on the right. Pale turquoise and light tan areas occur offshore near the coast. Several wide, branching, winding water channels extend through dark-green and brown land areas toward the sea. Irregular landforms and small offshore features are also visible.",
+          "reference_notes": "Image-grounded visual reference; avoid inferring location, sensor, date, exact measurements, or causes not visible in the image.",
+          "status": "draft_reference_review"
+        },
+        {
+          "question_id": "water_coastal_01_q2",
+          "question_type": "spatial_reasoning",
+          "question": "Describe the spatial arrangement and relationships between visible features.",
+          "reference_answer": "Multiple winding channels branch across the land and converge toward the coastal zone. The channels separate or border irregular patches of dark-green and brown terrain before reaching the lighter-colored nearshore water. The offshore water changes from pale turquoise and tan near the coast to deeper blue farther to the right.",
+          "reference_notes": "Image-grounded visual reference; avoid inferring location, sensor, date, exact measurements, or causes not visible in the image.",
+          "status": "draft_reference_review"
+        },
+        {
+          "question_id": "water_coastal_01_q3",
+          "question_type": "uncertainty",
+          "question": "What can and cannot be reliably concluded from this image alone?",
+          "reference_answer": "The image supports identifying a coastal setting, branching river-like channels, vegetated and non-vegetated land patches, and variations in nearshore water color. The exact sediment concentration, water depth, salinity, coral or reef identity, tidal conditions, channel flow direction, and the cause of the water-color patterns cannot be determined from this image alone.",
+          "reference_notes": "Image-grounded visual reference; avoid inferring location, sensor, date, exact measurements, or causes not visible in the image.",
+          "status": "draft_reference_review"
+        }
+      ]
+    },
+    {
+      "image_id": "water_coastal_02",
+      "category": "water_coastal",
+      "image_path": "",
+      "image_source": "",
+      "notes": "Placeholder for a future distinct image; do not reuse the first image if reporting 15 unique images.",
+      "questions": [
+        {
+          "question_id": "water_coastal_02_q1",
+          "question_type": "feature_identification",
+          "question": "What visible features can be identified in this image?",
+          "reference_answer": "",
+          "reference_notes": "",
+          "status": "awaiting_distinct_image"
+        },
+        {
+          "question_id": "water_coastal_02_q2",
+          "question_type": "spatial_reasoning",
+          "question": "Describe the spatial arrangement and relationships between visible features.",
+          "reference_answer": "",
+          "reference_notes": "",
+          "status": "awaiting_distinct_image"
+        },
+        {
+          "question_id": "water_coastal_02_q3",
+          "question_type": "uncertainty",
+          "question": "What can and cannot be reliably concluded from this image alone?",
+          "reference_answer": "",
+          "reference_notes": "",
+          "status": "awaiting_distinct_image"
+        }
+      ]
+    },
+    {
+      "image_id": "water_coastal_03",
+      "category": "water_coastal",
+      "image_path": "",
+      "image_source": "",
+      "notes": "Placeholder for a future distinct image; do not reuse the first image if reporting 15 unique images.",
+      "questions": [
+        {
+          "question_id": "water_coastal_03_q1",
+          "question_type": "feature_identification",
+          "question": "What visible features can be identified in this image?",
+          "reference_answer": "",
+          "reference_notes": "",
+          "status": "awaiting_distinct_image"
+        },
+        {
+          "question_id": "water_coastal_03_q2",
+          "question_type": "spatial_reasoning",
+          "question": "Describe the spatial arrangement and relationships between visible features.",
+          "reference_answer": "",
+          "reference_notes": "",
+          "status": "awaiting_distinct_image"
+        },
+        {
+          "question_id": "water_coastal_03_q3",
+          "question_type": "uncertainty",
+          "question": "What can and cannot be reliably concluded from this image alone?",
+          "reference_answer": "",
+          "reference_notes": "",
+          "status": "awaiting_distinct_image"
+        }
+      ]
+    },
+    {
+      "image_id": "barren_01",
+      "category": "barren",
+      "image_path": "data/images/BARREN LAND.png",
+      "image_source": "User-provided image",
+      "notes": "Reference answers drafted from the supplied image; verify against the original full-resolution file before treating as final.",
+      "questions": [
+        {
+          "question_id": "barren_01_q1",
+          "question_type": "feature_identification",
+          "question": "What visible features can be identified in this image?",
+          "reference_answer": "The image shows an extensive dry-looking landscape with broad tan, ochre, and brown areas. There are rugged, irregular ridges and darker-toned zones, especially across the right and lower portions. Several branching, channel-like patterns and lighter sediment-like surfaces are visible near the transition between the lighter and darker terrain.",
+          "reference_notes": "Image-grounded visual reference; avoid inferring location, sensor, date, exact measurements, or causes not visible in the image.",
+          "status": "draft_reference_review"
+        },
+        {
+          "question_id": "barren_01_q2",
+          "question_type": "spatial_reasoning",
+          "question": "Describe the spatial arrangement and relationships between visible features.",
+          "reference_answer": "The terrain has an irregular, rugged pattern rather than a regular human-made grid. Elongated ridges and darker dissected areas extend diagonally across the scene. Branching channel-like features converge and spread through lower-lying-looking areas. The image shows strong visual contrast between lighter tan terrain and darker brown-purple terrain, but it does not establish elevation or flow direction.",
+          "reference_notes": "Image-grounded visual reference; avoid inferring location, sensor, date, exact measurements, or causes not visible in the image.",
+          "status": "draft_reference_review"
+        },
+        {
+          "question_id": "barren_01_q3",
+          "question_type": "uncertainty",
+          "question": "What can and cannot be reliably concluded from this image alone?",
+          "reference_answer": "The image supports describing a dry-looking, sparsely vegetated or apparently unvegetated landscape with ridges, irregular terrain, and branching drainage-like patterns. The exact rock or soil composition, geological age, climate classification, erosion rate, elevation, and formation process cannot be established from this image alone.",
+          "reference_notes": "Image-grounded visual reference; avoid inferring location, sensor, date, exact measurements, or causes not visible in the image.",
+          "status": "draft_reference_review"
+        }
+      ]
+    },
+    {
+      "image_id": "barren_02",
+      "category": "barren",
+      "image_path": "",
+      "image_source": "",
+      "notes": "Placeholder for a future distinct image; do not reuse the first image if reporting 15 unique images.",
+      "questions": [
+        {
+          "question_id": "barren_02_q1",
+          "question_type": "feature_identification",
+          "question": "What visible features can be identified in this image?",
+          "reference_answer": "",
+          "reference_notes": "",
+          "status": "awaiting_distinct_image"
+        },
+        {
+          "question_id": "barren_02_q2",
+          "question_type": "spatial_reasoning",
+          "question": "Describe the spatial arrangement and relationships between visible features.",
+          "reference_answer": "",
+          "reference_notes": "",
+          "status": "awaiting_distinct_image"
+        },
+        {
+          "question_id": "barren_02_q3",
+          "question_type": "uncertainty",
+          "question": "What can and cannot be reliably concluded from this image alone?",
+          "reference_answer": "",
+          "reference_notes": "",
+          "status": "awaiting_distinct_image"
+        }
+      ]
+    },
+    {
+      "image_id": "barren_03",
+      "category": "barren",
+      "image_path": "",
+      "image_source": "",
+      "notes": "Placeholder for a future distinct image; do not reuse the first image if reporting 15 unique images.",
+      "questions": [
+        {
+          "question_id": "barren_03_q1",
+          "question_type": "feature_identification",
+          "question": "What visible features can be identified in this image?",
+          "reference_answer": "",
+          "reference_notes": "",
+          "status": "awaiting_distinct_image"
+        },
+        {
+          "question_id": "barren_03_q2",
+          "question_type": "spatial_reasoning",
+          "question": "Describe the spatial arrangement and relationships between visible features.",
+          "reference_answer": "",
+          "reference_notes": "",
+          "status": "awaiting_distinct_image"
+        },
+        {
+          "question_id": "barren_03_q3",
+          "question_type": "uncertainty",
+          "question": "What can and cannot be reliably concluded from this image alone?",
+          "reference_answer": "",
+          "reference_notes": "",
+          "status": "awaiting_distinct_image"
+        }
+      ]
+    }
+  ]
+}

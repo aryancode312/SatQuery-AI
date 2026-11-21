@@ -1,0 +1,302 @@
+[
+    {
+        "image_id": "agriculture_01",
+        "category": "agriculture",
+        "question_id": "agriculture_01_q1",
+        "question_type": "feature_identification",
+        "question": "What visible features can be identified in this image?",
+        "reference_answer": "The image shows a large patchwork of rectangular and square agricultural-looking plots. The plots have varied green, brown, tan, and muted colors, with visible differences in surface texture and tone. Narrow linear boundaries and tracks divide many plots. A dark, irregular winding linear feature runs through the left portion, and a compact cluster of closely spaced structures is visible toward the lower-right area.",
+        "model_answer": "PASTE THE COMPLETE MODEL RESPONSE HERE",
+        "scores": {
+            "feature_correctness": 4,
+            "spatial_accuracy": 4,
+            "groundedness": 3,
+            "completeness": 5,
+            "uncertainty_handling": 4
+        },
+        "average_score": 4.0,
+        "reviewer_notes": "Good visual feature identification. However, irrigation, arid climate, crop rotation, and village identification are not established by the image alone.",
+        "reviewer": "human_reviewer",
+        "reviewed_at": "2026-10-31T14:27:48.041448+00:00"
+    },
+    {
+        "image_id": "agriculture_01",
+        "category": "agriculture",
+        "question_id": "agriculture_01_q2",
+        "question_type": "spatial_reasoning",
+        "question": "Describe the spatial arrangement and relationships between visible features.",
+        "reference_answer": "The fields form a mostly regular grid, although plot sizes and orientations vary. Narrow boundaries or tracks separate adjacent plots. The winding dark feature cuts across the grid on the left, while the denser built-up-looking cluster lies near the lower-right edge. The image does not establish whether the winding feature is a canal, stream, or road.",
+        "model_answer": "PASTE THE COMPLETE AGRICULTURE Q2 MODEL RESPONSE HERE",
+        "scores": {
+            "feature_correctness": 4,
+            "spatial_accuracy": 3,
+            "groundedness": 3,
+            "completeness": 4,
+            "uncertainty_handling": 3
+        },
+        "average_score": 3.4,
+        "reviewer_notes": "Good description of the field grid and spatial arrangement. However, the watercourse identity, irrigation role, roads, and settlement functions are not established by the image.",
+        "reviewer": "human_reviewer",
+        "reviewed_at": "2026-10-31T14:30:12.536149+00:00"
+    },
+    {
+        "image_id": "agriculture_01",
+        "category": "agriculture",
+        "question_id": "agriculture_01_q3",
+        "question_type": "uncertainty",
+        "question": "What can and cannot be reliably concluded from this image alone?",
+        "reference_answer": "The image supports identifying a patchwork of cultivated-looking plots, linear field boundaries, a winding dark feature, and a small cluster of structures. The different field colors may reflect differences in crop cover, soil exposure, or image conditions, but the crop types, planting dates, irrigation status, exact land ownership, and geographic location cannot be determined from this image alone.",
+        "model_answer": "PASTE THE COMPLETE AGRICULTURE Q3 MODEL RESPONSE HERE",
+        "scores": {
+            "feature_correctness": 4,
+            "spatial_accuracy": 4,
+            "groundedness": 4,
+            "completeness": 4,
+            "uncertainty_handling": 4
+        },
+        "average_score": 4.0,
+        "reviewer_notes": "Good separation of direct observations, interpretations, and limitations. However, the watercourse and settlement are not conclusively identified. Supplied response appears truncated at the end.",
+        "reviewer": "human_reviewer",
+        "reviewed_at": "2026-10-31T14:31:03.615538+00:00"
+    },
+    {
+        "image_id": "forest_01",
+        "category": "forest",
+        "question_id": "forest_01_q1",
+        "question_type": "feature_identification",
+        "question": "What visible features can be identified in this image?",
+        "reference_answer": "The image contains extensive dark-green vegetation cover. A broad, light tan river-like feature with many bends and loops crosses the scene. Smaller winding channels are also visible, along with a few lighter patches that appear to be clearings or developed areas. A more regular rectangular pattern is visible near the lower-central part of the image.",
+        "model_answer": "PASTE THE COMPLETE FOREST Q1 MODEL RESPONSE HERE",
+        "scores": {
+            "feature_correctness": 4,
+            "spatial_accuracy": 4,
+            "groundedness": 2,
+            "completeness": 4,
+            "uncertainty_handling": 3
+        },
+        "average_score": 3.4,
+        "reviewer_notes": "Correctly identifies dense vegetation, winding river-like feature, and rectangular patterned area. However, claims about oxbow lakes, sediment load, plantation species, tropical climate, regional location, and transportation use are not established by the image.",
+        "reviewer": "human_reviewer",
+        "reviewed_at": "2026-10-31T14:32:23.191921+00:00"
+    },
+    {
+        "image_id": "forest_01",
+        "category": "forest",
+        "question_id": "forest_01_q2",
+        "question_type": "spatial_reasoning",
+        "question": "Describe the spatial arrangement and relationships between visible features.",
+        "reference_answer": "The broad winding river-like feature forms a prominent corridor through the vegetated landscape, with repeated bends and loops. Dense green cover occupies much of the area on both sides. Smaller channels and lighter patches are scattered through the vegetation. The rectangular patterned area lies near the lower-central portion and contrasts with the surrounding irregular vegetation texture.",
+        "model_answer": "PASTE THE COMPLETE FOREST Q2 MODEL RESPONSE HERE",
+        "scores": {
+            "feature_correctness": 3,
+            "spatial_accuracy": 3,
+            "groundedness": 2,
+            "completeness": 4,
+            "uncertainty_handling": 2
+        },
+        "average_score": 2.8,
+        "reviewer_notes": "Identifies the main river-like feature, vegetation, and patterned clearing. However, claims about settlements, transportation, agricultural planning, terrain elevation, and floodplain relationships are not established by the image.",
+        "reviewer": "human_reviewer",
+        "reviewed_at": "2026-10-31T14:33:12.939171+00:00"
+    },
+    {
+        "image_id": "forest_01",
+        "category": "forest",
+        "question_id": "forest_01_q3",
+        "question_type": "uncertainty",
+        "question": "What can and cannot be reliably concluded from this image alone?",
+        "reference_answer": "The image supports identifying extensive vegetation, a prominent winding river-like feature, smaller channels, and some lighter or more regular patches. The exact tree species, forest type, biodiversity, water quality, seasonal conditions, cause of the clearings, and whether the rectangular area is a plantation or another land use cannot be confirmed from this image alone.",
+        "model_answer": "PASTE THE COMPLETE FOREST Q3 MODEL RESPONSE HERE",
+        "scores": {
+            "feature_correctness": 4,
+            "spatial_accuracy": 4,
+            "groundedness": 2,
+            "completeness": 4,
+            "uncertainty_handling": 3
+        },
+        "average_score": 3.4,
+        "reviewer_notes": "Good coverage of visible features and limitations. However, river turbidity, oxbow lakes, settlement identity, roads, and agricultural classification are not conclusively established by the image.",
+        "reviewer": "human_reviewer",
+        "reviewed_at": "2026-10-31T14:33:59.618376+00:00"
+    },
+    {
+        "image_id": "urban_01",
+        "category": "urban",
+        "question_id": "urban_01_q1",
+        "question_type": "feature_identification",
+        "question": "What visible features can be identified in this image?",
+        "reference_answer": "The image shows a dense built-up area with many closely spaced buildings, a network of roads, and several larger building complexes. Small green spaces and numerous bright-blue features are visible within some blocks. A large complex with a curved or circular layout is prominent in the upper-central area, and a blue rectangular sports-court-like surface appears right of center.",
+        "model_answer": "PASTE THE COMPLETE URBAN Q1 MODEL RESPONSE HERE",
+        "scores": {
+            "feature_correctness": 4,
+            "spatial_accuracy": 4,
+            "groundedness": 3,
+            "completeness": 5,
+            "uncertainty_handling": 4
+        },
+        "average_score": 4.0,
+        "reviewer_notes": "Good identification of urban features and spatial layout. Some interpretations about solar panels, affluence, energy demand, and urban planning are not independently supported by the image.",
+        "reviewer": "human_reviewer",
+        "reviewed_at": "2026-10-31T14:34:52.429560+00:00"
+    },
+    {
+        "image_id": "urban_01",
+        "category": "urban",
+        "question_id": "urban_01_q2",
+        "question_type": "spatial_reasoning",
+        "question": "Describe the spatial arrangement and relationships between visible features.",
+        "reference_answer": "Roads divide the built-up area into blocks and connect the dense building clusters. A large curved-layout complex occupies the upper-central portion, while smaller blocks of buildings extend across the left and lower portions. Open landscaped spaces and blue pool-like features occur within several compounds. The blue rectangular court-like feature is located to the right of the central road corridor.",
+        "model_answer": "PASTE THE COMPLETE URBAN Q2 MODEL RESPONSE HERE",
+        "scores": {
+            "feature_correctness": 4,
+            "spatial_accuracy": 4,
+            "groundedness": 3,
+            "completeness": 5,
+            "uncertainty_handling": 3
+        },
+        "average_score": 3.8,
+        "reviewer_notes": "Good description of directional and spatial relationships. Some interpretations about formal zoning, civic function, urban planning, accessibility, and landmark importance are not directly established by the image.",
+        "reviewer": "human_reviewer",
+        "reviewed_at": "2026-10-31T14:35:36.649616+00:00"
+    },
+    {
+        "image_id": "urban_01",
+        "category": "urban",
+        "question_id": "urban_01_q3",
+        "question_type": "uncertainty",
+        "question": "What can and cannot be reliably concluded from this image alone?",
+        "reference_answer": "The image supports identifying dense buildings, roads, larger compounds, landscaped spaces, and several blue pool-like or court-like features. The precise function of the buildings, whether every blue feature is a swimming pool, the names of roads, population, building height, and geographic location cannot be determined from this image alone.",
+        "model_answer": "PASTE THE COMPLETE URBAN Q3 MODEL RESPONSE HERE",
+        "scores": {
+            "feature_correctness": 4,
+            "spatial_accuracy": 4,
+            "groundedness": 3,
+            "completeness": 3,
+            "uncertainty_handling": 4
+        },
+        "average_score": 3.6,
+        "reviewer_notes": "Good separation of visual observations, interpretations, and uncertainties. Claims about affluence, planned development, and climate are not established by the image. Submitted response is truncated in the subsurface-features section, reducing completeness.",
+        "reviewer": "human_reviewer",
+        "reviewed_at": "2026-10-31T14:36:18.099825+00:00"
+    },
+    {
+        "image_id": "water_coastal_01",
+        "category": "water_coastal",
+        "question_id": "water_coastal_01_q1",
+        "question_type": "feature_identification",
+        "question": "What visible features can be identified in this image?",
+        "reference_answer": "The image shows a coastline or coastal-water interface with a large body of blue water on the right. Pale turquoise and light tan areas occur offshore near the coast. Several wide, branching, winding water channels extend through dark-green and brown land areas toward the sea. Irregular landforms and small offshore features are also visible.",
+        "model_answer": "PASTE THE COMPLETE WATER AND COASTAL Q1 MODEL RESPONSE HERE",
+        "scores": {
+            "feature_correctness": 4,
+            "spatial_accuracy": 4,
+            "groundedness": 3,
+            "completeness": 5,
+            "uncertainty_handling": 4
+        },
+        "average_score": 4.0,
+        "reviewer_notes": "Good identification of coastal features, river channels, sediment plume, islands, and vegetation. Claims about sediment concentration, water depth, mangroves, and ongoing coastal changes require additional evidence.",
+        "reviewer": "human_reviewer",
+        "reviewed_at": "2026-11-02T07:30:05.314166+00:00"
+    },
+    {
+        "image_id": "water_coastal_01",
+        "category": "water_coastal",
+        "question_id": "water_coastal_01_q2",
+        "question_type": "spatial_reasoning",
+        "question": "Describe the spatial arrangement and relationships between visible features.",
+        "reference_answer": "Multiple winding channels branch across the land and converge toward the coastal zone. The channels separate or border irregular patches of dark-green and brown terrain before reaching the lighter-colored nearshore water. The offshore water changes from pale turquoise and tan near the coast to deeper blue farther to the right.",
+        "model_answer": "PASTE THE COMPLETE WATER AND COASTAL Q2 MODEL RESPONSE HERE",
+        "scores": {
+            "feature_correctness": 4,
+            "spatial_accuracy": 4,
+            "groundedness": 3,
+            "completeness": 4,
+            "uncertainty_handling": 3
+        },
+        "average_score": 3.6,
+        "reviewer_notes": "Detailed description of coastal spatial relationships, river channels, vegetation distribution, and offshore islands. Claims about tidal influence, water depth, sediment deposition, and coastal change are not fully supported by a single image. Submitted response is truncated at the end.",
+        "reviewer": "human_reviewer",
+        "reviewed_at": "2026-11-02T07:30:56.508498+00:00"
+    },
+    {
+        "image_id": "water_coastal_01",
+        "category": "water_coastal",
+        "question_id": "water_coastal_01_q3",
+        "question_type": "uncertainty",
+        "question": "What can and cannot be reliably concluded from this image alone?",
+        "reference_answer": "The image supports identifying a coastal setting, branching river-like channels, vegetated and non-vegetated land patches, and variations in nearshore water color. The exact sediment concentration, water depth, salinity, coral or reef identity, tidal conditions, channel flow direction, and the cause of the water-color patterns cannot be determined from this image alone.",
+        "model_answer": "PASTE THE COMPLETE WATER AND COASTAL Q3 MODEL RESPONSE HERE",
+        "scores": {
+            "feature_correctness": 4,
+            "spatial_accuracy": 4,
+            "groundedness": 3,
+            "completeness": 5,
+            "uncertainty_handling": 4
+        },
+        "average_score": 4.0,
+        "reviewer_notes": "Good coverage of coastal features and limitations. Specific claims about Mekong Delta resemblance, sediment concentration, mangroves, coral reefs, and turbulence require additional evidence.",
+        "reviewer": "human_reviewer",
+        "reviewed_at": "2026-11-02T07:31:41.665916+00:00"
+    },
+    {
+        "image_id": "barren_01",
+        "category": "barren",
+        "question_id": "barren_01_q1",
+        "question_type": "feature_identification",
+        "question": "What visible features can be identified in this image?",
+        "reference_answer": "The image shows an extensive dry-looking landscape with broad tan, ochre, and brown areas. There are rugged, irregular ridges and darker-toned zones, especially across the right and lower portions. Several branching, channel-like patterns and lighter sediment-like surfaces are visible near the transition between the lighter and darker terrain.",
+        "model_answer": "PASTE THE COMPLETE BARREN LAND Q1 MODEL RESPONSE HERE",
+        "scores": {
+            "feature_correctness": 4,
+            "spatial_accuracy": 4,
+            "groundedness": 3,
+            "completeness": 4,
+            "uncertainty_handling": 4
+        },
+        "average_score": 3.8,
+        "reviewer_notes": "Good identification of terrain patterns, ridges, valleys, and depressions. Geological classifications such as wadis, playas, impact craters, and folded structures need additional evidence. False-colour composite identification is unverified without image metadata. Response is truncated.",
+        "reviewer": "human_reviewer",
+        "reviewed_at": "2026-11-02T07:32:40.896418+00:00"
+    },
+    {
+        "image_id": "barren_01",
+        "category": "barren",
+        "question_id": "barren_01_q2",
+        "question_type": "spatial_reasoning",
+        "question": "Describe the spatial arrangement and relationships between visible features.",
+        "reference_answer": "The terrain has an irregular, rugged pattern rather than a regular human-made grid. Elongated ridges and darker dissected areas extend diagonally across the scene. Branching channel-like features converge and spread through lower-lying-looking areas. The image shows strong visual contrast between lighter tan terrain and darker brown-purple terrain, but it does not establish elevation or flow direction.",
+        "model_answer": "PASTE THE COMPLETE BARREN LAND Q2 MODEL RESPONSE HERE",
+        "scores": {
+            "feature_correctness": 4,
+            "spatial_accuracy": 4,
+            "groundedness": 3,
+            "completeness": 4,
+            "uncertainty_handling": 3
+        },
+        "average_score": 3.6,
+        "reviewer_notes": "Good description of terrain zones, boundaries, depressions, and spatial distribution. Claims about dunes, erosion, elevation, sediment accumulation, and material composition require further evidence. Submitted response is truncated.",
+        "reviewer": "human_reviewer",
+        "reviewed_at": "2026-11-02T07:33:32.493630+00:00"
+    },
+    {
+        "image_id": "barren_01",
+        "category": "barren",
+        "question_id": "barren_01_q3",
+        "question_type": "uncertainty",
+        "question": "What can and cannot be reliably concluded from this image alone?",
+        "reference_answer": "The image supports describing a dry-looking, sparsely vegetated or apparently unvegetated landscape with ridges, irregular terrain, and branching drainage-like patterns. The exact rock or soil composition, geological age, climate classification, erosion rate, elevation, and formation process cannot be established from this image alone.",
+        "model_answer": "PASTE THE COMPLETE BARREN LAND Q3 MODEL RESPONSE HERE",
+        "scores": {
+            "feature_correctness": 4,
+            "spatial_accuracy": 4,
+            "groundedness": 3,
+            "completeness": 4,
+            "uncertainty_handling": 4
+        },
+        "average_score": 3.8,
+        "reviewer_notes": "Good identification of terrain features and explicit acknowledgement of uncertainty. Interpretations involving playas, alluvial fans, desert classification, erosion, and mineralogy require further evidence.",
+        "reviewer": "human_reviewer",
+        "reviewed_at": "2026-11-02T07:34:16.331133+00:00"
+    }
+]

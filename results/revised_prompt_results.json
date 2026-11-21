@@ -1,0 +1,254 @@
+[
+  {
+    "image_id": "agriculture_01",
+    "category": "agriculture",
+    "question_id": "agriculture_01_q1",
+    "question_type": "feature_identification",
+    "question": "What visible features can be identified in this image?",
+    "reference_answer": "[Draft reference answer is in data/evaluation_dataset.json; this archive does not reproduce it.]",
+    "model_answer": "[RECONSTRUCTED SUMMARY — NOT VERBATIM] The model described rectangular parcels with colour and texture variation, linear boundaries, a winding feature on the left/centre, and structure clusters including one in the lower-right. It interpreted these as roads, a river/canal, irrigation, crops, planned land division and a town/village.",
+    "scores": {
+      "feature_correctness": 4,
+      "spatial_accuracy": 4,
+      "groundedness": 3,
+      "completeness": 5,
+      "uncertainty_handling": 4
+    },
+    "average_score": 4.0,
+    "reviewer_notes": "Feature coverage was good; roads, waterway, irrigation, crops and settlement function were over-interpreted.",
+    "reviewer": "human_review",
+    "reviewed_at": "2026-11-10T06:00:11.691271+00:00",
+    "provenance": "reconstructed_or_structured_summary_not_verbatim"
+  },
+  {
+    "image_id": "agriculture_01",
+    "category": "agriculture",
+    "question_id": "agriculture_01_q2",
+    "question_type": "spatial_relationships",
+    "question": "Describe the spatial arrangement and relationships between visible features.",
+    "reference_answer": "[Draft reference answer is in data/evaluation_dataset.json; this archive does not reproduce it.]",
+    "model_answer": "[RECONSTRUCTED SUMMARY — NOT VERBATIM] The model described a parcel grid interrupted by a winding feature, with structure clusters in the lower-right and upper-right. It interpreted the winding feature as a waterway and suggested roads, villages/service centres, irrigation, land ownership/taxation and intensive land management.",
+    "scores": {
+      "feature_correctness": 4,
+      "spatial_accuracy": 5,
+      "groundedness": 3,
+      "completeness": 5,
+      "uncertainty_handling": 3
+    },
+    "average_score": 4.0,
+    "reviewer_notes": "Strong spatial reasoning; unsupported interpretations included waterway, roads, villages, irrigation, ownership and taxation.",
+    "reviewer": "human_review",
+    "reviewed_at": "2026-11-10T06:00:11.691376+00:00",
+    "provenance": "reconstructed_or_structured_summary_not_verbatim"
+  },
+  {
+    "image_id": "agriculture_01",
+    "category": "agriculture",
+    "question_id": "agriculture_01_q3",
+    "question_type": "uncertainty_and_limitations",
+    "question": "What can and cannot be reliably concluded from this image alone?",
+    "reference_answer": "[Draft reference answer is in data/evaluation_dataset.json; this archive does not reproduce it.]",
+    "model_answer": "[RECONSTRUCTED SUMMARY — NOT VERBATIM] The model discussed limitations around crop types, materials, temporal context, location, climate, infrastructure and socioeconomic information. However, it still described a planned agricultural landscape and referred to a waterway, settlement and irrigation as though established.",
+    "scores": {
+      "feature_correctness": 4,
+      "spatial_accuracy": 4,
+      "groundedness": 3,
+      "completeness": 5,
+      "uncertainty_handling": 4
+    },
+    "average_score": 4.0,
+    "reviewer_notes": "Good limitations coverage, but conclusions about planned agriculture, waterway, settlement and irrigation were not fully supported.",
+    "reviewer": "human_review",
+    "reviewed_at": "2026-11-10T06:00:11.691390+00:00",
+    "provenance": "reconstructed_or_structured_summary_not_verbatim"
+  },
+  {
+    "image_id": "forest_01",
+    "category": "forest",
+    "question_id": "forest_01_q1",
+    "question_type": "feature_identification",
+    "question": "What visible features can be identified in this image?",
+    "reference_answer": "[Draft reference answer is in data/evaluation_dataset.json; this archive does not reproduce it.]",
+    "model_answer": "[STRUCTURED SUMMARY OF USER-SUPPLIED RESPONSE] The model identified tan meandering waterways and tributaries, a dark crescent-shaped feature, extensive dark-green cover, lighter geometric clusters, rectangular grid patterns and thin linear features. It inferred sediment load, deeper water, forest/jungle, settlements, roads, agriculture/plantations, a flat floodplain and forested uplands. It acknowledged limits around location, vegetation type, crops and scale.",
+    "scores": {
+      "feature_correctness": 4,
+      "spatial_accuracy": 4,
+      "groundedness": 2,
+      "completeness": 5,
+      "uncertainty_handling": 3
+    },
+    "average_score": 3.6,
+    "reviewer_notes": "Identifies major features, but infers sediment, depth, settlements, crops, river use and topography.",
+    "reviewer": "human_review",
+    "reviewed_at": "2026-11-10T06:00:11.691401+00:00",
+    "provenance": "reconstructed_or_structured_summary_not_verbatim"
+  },
+  {
+    "image_id": "forest_01",
+    "category": "forest",
+    "question_id": "forest_01_q2",
+    "question_type": "spatial_relationships",
+    "question": "Describe the spatial arrangement and relationships between visible features.",
+    "reference_answer": "[Draft reference answer is in data/evaluation_dataset.json; this archive does not reproduce it.]",
+    "model_answer": "[STRUCTURED SUMMARY OF USER-SUPPLIED RESPONSE] The model described a dark-green background, a wide winding tan feature in the upper image narrowing down-left, smaller branching features, grid-like light areas in the upper-left and lower portions, and thin lines apparently connecting them. It interpreted these as river, settlements, agriculture and roads, and described human activity clustered near the river. It noted limits around exact vegetation, land use, scale and location.",
+    "scores": {
+      "feature_correctness": 4,
+      "spatial_accuracy": 5,
+      "groundedness": 2,
+      "completeness": 5,
+      "uncertainty_handling": 3
+    },
+    "average_score": 3.8,
+    "reviewer_notes": "Excellent spatial arrangement; unsupported sediment, tropical, floodplain, settlement, agriculture and infrastructure claims.",
+    "reviewer": "human_review",
+    "reviewed_at": "2026-11-10T06:00:11.691405+00:00",
+    "provenance": "reconstructed_or_structured_summary_not_verbatim"
+  },
+  {
+    "image_id": "forest_01",
+    "category": "forest",
+    "question_id": "forest_01_q3",
+    "question_type": "uncertainty_and_limitations",
+    "question": "What can and cannot be reliably concluded from this image alone?",
+    "reference_answer": "[Draft reference answer is in data/evaluation_dataset.json; this archive does not reproduce it.]",
+    "model_answer": "[STRUCTURED SUMMARY OF USER-SUPPLIED RESPONSE] The model described dark-green vegetation, a tan meandering feature, light clusters, grid-like managed areas and smaller waterways. It inferred a sediment-laden river, floodplain, settlements and agriculture/forestry. It discussed limits around location, time, crops, settlement function, infrastructure, forest status, water quality, sensor, resolution and scale.",
+    "scores": {
+      "feature_correctness": 4,
+      "spatial_accuracy": 4,
+      "groundedness": 2,
+      "completeness": 5,
+      "uncertainty_handling": 3
+    },
+    "average_score": 3.6,
+    "reviewer_notes": "Comprehensive, but contradictory certainty around river, sediment, settlements and managed land.",
+    "reviewer": "human_review",
+    "reviewed_at": "2026-11-10T06:00:11.691408+00:00",
+    "provenance": "reconstructed_or_structured_summary_not_verbatim"
+  },
+  {
+    "image_id": "water_coastal_01",
+    "category": "water_coastal",
+    "question_id": "water_coastal_01_q1",
+    "question_type": "feature_identification",
+    "question": "What visible features can be identified in this image?",
+    "reference_answer": "[Draft reference answer is in data/evaluation_dataset.json; this archive does not reproduce it.]",
+    "model_answer": "[STRUCTURED SUMMARY OF USER-SUPPLIED RESPONSE] The model identified an irregular land-water boundary, branching channels, a tan/brown plume, water-colour gradients, green/brown inland patches and offshore islands or patches. It interpreted these as a river delta, sediment discharge, ocean-current interaction, mangroves/wetland forest, shallow bathymetry and reefs. It acknowledged limits around location, vegetation, exact depth and temporal plume movement.",
+    "scores": {
+      "feature_correctness": 4,
+      "spatial_accuracy": 5,
+      "groundedness": 2,
+      "completeness": 5,
+      "uncertainty_handling": 3
+    },
+    "average_score": 3.8,
+    "reviewer_notes": "Good coastal feature and spatial identification; infers sediment, currents, mangroves, bathymetry and reefs.",
+    "reviewer": "human_review",
+    "reviewed_at": "2026-11-10T06:00:11.691411+00:00",
+    "provenance": "reconstructed_or_structured_summary_not_verbatim"
+  },
+  {
+    "image_id": "water_coastal_01",
+    "category": "water_coastal",
+    "question_id": "water_coastal_01_q2",
+    "question_type": "spatial_relationships",
+    "question": "Describe the spatial arrangement and relationships between visible features.",
+    "reference_answer": "[Draft reference answer is in data/evaluation_dataset.json; this archive does not reproduce it.]",
+    "model_answer": "[STRUCTURED SUMMARY OF USER-SUPPLIED RESPONSE] The model placed land to the left and water to the right/lower-right, described a tan channel entering from the top-left and splitting near the coast, a plume extending offshore, and islands in turquoise patches. It inferred a river delta, estuarine mixing, deposition/progradation, erosion, shallow marine features and inland land use.",
+    "scores": {
+      "feature_correctness": 4,
+      "spatial_accuracy": 5,
+      "groundedness": 2,
+      "completeness": 5,
+      "uncertainty_handling": 3
+    },
+    "average_score": 3.8,
+    "reviewer_notes": "Strong spatial reasoning; infers delta formation, estuarine mixing, deposition, erosion and shallow marine features.",
+    "reviewer": "human_review",
+    "reviewed_at": "2026-11-10T06:00:11.691414+00:00",
+    "provenance": "reconstructed_or_structured_summary_not_verbatim"
+  },
+  {
+    "image_id": "water_coastal_01",
+    "category": "water_coastal",
+    "question_id": "water_coastal_01_q3",
+    "question_type": "uncertainty_and_limitations",
+    "question": "What can and cannot be reliably concluded from this image alone?",
+    "reference_answer": "[Draft reference answer is in data/evaluation_dataset.json; this archive does not reproduce it.]",
+    "model_answer": "[STRUCTURED SUMMARY OF USER-SUPPLIED RESPONSE] The model described a tan/brown plume, coastal colour gradients, branching channels, dark-green landmasses, inland green/brown patches, geometric patterns and turquoise ocean patches. It discussed limits around location, temporal change, sediment composition, vegetation species, population, infrastructure, economic activity, water depth/quality and geological history, while still treating several process labels as established.",
+    "scores": {
+      "feature_correctness": 4,
+      "spatial_accuracy": 4,
+      "groundedness": 2,
+      "completeness": 5,
+      "uncertainty_handling": 3
+    },
+    "average_score": 3.6,
+    "reviewer_notes": "Thorough limitations, but direct observations overstate sediment discharge, delta, depth and land use.",
+    "reviewer": "human_review",
+    "reviewed_at": "2026-11-10T06:00:11.691417+00:00",
+    "provenance": "reconstructed_or_structured_summary_not_verbatim"
+  },
+  {
+    "image_id": "barren_01",
+    "category": "barren",
+    "question_id": "barren_01_q1",
+    "question_type": "feature_identification",
+    "question": "What visible features can be identified in this image?",
+    "reference_answer": "[Draft reference answer is in data/evaluation_dataset.json; this archive does not reproduce it.]",
+    "model_answer": "[STRUCTURED SUMMARY OF USER-SUPPLIED RESPONSE] The model described a light ochre upper/left region with parallel ridges and a dark blue-purple lower/right region with branching dendritic patterns, irregular boundaries and pale interface patches. It speculated about Mars, fluvial drainage, fractures, aeolian ridges, tectonics, elevation, bedrock, alluvial/glacial deposits and erosion/deposition. It acknowledged limits around scale, composition, age, timing and location.",
+    "scores": {
+      "feature_correctness": 4,
+      "spatial_accuracy": 4,
+      "groundedness": 2,
+      "completeness": 5,
+      "uncertainty_handling": 3
+    },
+    "average_score": 3.6,
+    "reviewer_notes": "Identifies contrasting terrain and patterns, but planetary identification and geological process claims are unsupported.",
+    "reviewer": "human_review",
+    "reviewed_at": "2026-11-10T06:00:11.691420+00:00",
+    "provenance": "reconstructed_or_structured_summary_not_verbatim"
+  },
+  {
+    "image_id": "barren_01",
+    "category": "barren",
+    "question_id": "barren_01_q2",
+    "question_type": "spatial_relationships",
+    "question": "Describe the spatial arrangement and relationships between visible features.",
+    "reference_answer": "[Draft reference answer is in data/evaluation_dataset.json; this archive does not reproduce it.]",
+    "model_answer": "[STRUCTURED SUMMARY OF USER-SUPPLIED RESPONSE] The model described an upper ochre ridged region with small dark depressions, a lower dark region it labelled dense vegetation/forest with dendritic patterns, and an irregular lighter transitional band. It inferred plateau/highland, basin/valley, alluvial fan, vegetation gradient, drainage and erosion.",
+    "scores": {
+      "feature_correctness": 3,
+      "spatial_accuracy": 4,
+      "groundedness": 2,
+      "completeness": 5,
+      "uncertainty_handling": 3
+    },
+    "average_score": 3.4,
+    "reviewer_notes": "Misclassifies dark terrain as forest and infers unsupported elevation and geological processes.",
+    "reviewer": "human_review",
+    "reviewed_at": "2026-11-10T06:00:11.691423+00:00",
+    "provenance": "reconstructed_or_structured_summary_not_verbatim"
+  },
+  {
+    "image_id": "barren_01",
+    "category": "barren",
+    "question_id": "barren_01_q3",
+    "question_type": "uncertainty_and_limitations",
+    "question": "What can and cannot be reliably concluded from this image alone?",
+    "reference_answer": "[Draft reference answer is in data/evaluation_dataset.json; this archive does not reproduce it.]",
+    "model_answer": "[STRUCTURED SUMMARY OF USER-SUPPLIED RESPONSE] The model described tan/orange and dark blue-purple zones, ridges, branching patterns, depressions, boundaries and linear features. It speculated about desert/arid conditions, iron-rich soils, dunes, water bodies, vegetation, minerals, wind/water erosion and geological units. It listed limits around location, scale, composition, time, atmosphere, human activity and geological history.",
+    "scores": {
+      "feature_correctness": 4,
+      "spatial_accuracy": 4,
+      "groundedness": 2,
+      "completeness": 5,
+      "uncertainty_handling": 3
+    },
+    "average_score": 3.6,
+    "reviewer_notes": "Detailed limitations, but unsupported arid/desert, elevation, erosion and water-body conclusions.",
+    "reviewer": "human_review",
+    "reviewed_at": "2026-11-10T06:00:11.691426+00:00",
+    "provenance": "reconstructed_or_structured_summary_not_verbatim"
+  }
+]
